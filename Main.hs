@@ -15,6 +15,7 @@ import System.Directory
 import System.FilePath
 import System (system)
 import Data.List (intercalate)
+import Control.Monad.Trans.Reader
 
 -- AcidState/IxSet imports
 import Data.Acid            ( AcidState, Query, Update, makeAcidic, openLocalState )
@@ -25,7 +26,7 @@ import Data.Data            ( Data, Typeable )
 import Data.IxSet           (Indexable(..), IxSet(..), (@=), (@*), Proxy(..), getOne, ixFun, ixSet)
 import qualified Data.IxSet as IxSet
 import Data.Ratio
-import Control.Monad.Reader (ask)
+import qualified Control.Monad.Reader as Q
 import Control.Monad.State  (get, put)
 import Control.Exception    (bracket)
 
@@ -90,7 +91,7 @@ updateStats (t,s,v) pass =
 
 tenseStats ::  Query Stats  [(Tense,(Int,Int))]
 tenseStats = 
-	do (Stats vfs) <- ask
+	do (Stats vfs) <- Q.ask
  	   return $ map (\t -> (t, counts . getTrials vfs $ t)) enumAll
 	   where getTrials vs = join . map trials . IxSet.toList . (vs @=)
 		 counts bs = (sumB bs, length bs)
@@ -105,6 +106,14 @@ main =  do bracket (openLocalState $ Stats empty)
 theDelay :: Int
 theDelay = 4
 
+type Verb = String
+
+data Params = Params { pHiTen :: Tense
+                     , pNumVerbs :: Int
+                     , pVerbs :: [(Verb,String)]
+                     , pAcid :: AcidState Stats
+                     }
+
 mainLoop :: AcidState Stats -> IO ()
 mainLoop acid = do 
 	args <- getArgs
@@ -112,54 +121,55 @@ mainLoop acid = do
         verbs <- map (splitOnFirst '\t') . lines <$> readFile "./verbs.txt"
         let len = length verbs
         seed <- newStdGen
-        loop seed verbs (hiTen,len) acid
+        --loop seed verbs (hiTen,len) acid
+        runReaderT (loop seed) $ Params hiTen len verbs acid
 
-loop :: StdGen -> [(String,String)] -> (Tense,Int) -> AcidState Stats -> IO ()
-loop seed verbs (hiTen,len) acid = do 
-			system "clear"
-			displayProblem (tense,subj,verb)
-                        delay theDelay >> putStrLn ""
-                        putStrLn $ conjugateR tense subj verb 
-                        showOptions
-        where ((tense,subj,idx),newSeed) = getRands seed (hiTen,len-1)
-              (verb,def) = verbs !! idx
-              showOptions = do
-                                putStrLn $ tab2spaces 4 "[S]how All\t[D]efinition\t[C]orrect\t[W]rong\t[G]et Stats\t[Q]uit"
-                                x <- toLower . head <$> getLine
+
+--loop :: StdGen -> [(String,String)] -> (Tense,Int) -> AcidState Stats -> IO ()
+loop :: StdGen -> ReaderT Params IO ()
+loop seed = do 
+	liftIO $ system "clear"
+        ((tense,subj,(verb,def)),newSeed) <- getProblem seed
+	liftIO $ displayProblem (tense,subj,verb)
+        liftIO $ delay theDelay >> putStrLn ""
+        liftIO $ putStrLn $ conjugateR tense subj verb 
+        showOptions tense subj verb def newSeed 
+         where showOptions tense subj verb def seed = do
+                                dispLine $ tab2spaces 4 "[S]how All\t[D]efinition\t[C]orrect\t[W]rong\t[G]et Stats\t[Q]uit"
+                                x <- toLower . head <$> liftIO getLine
                                 case x of
-                                   's' -> (putStrLn $ show $ conjs PresentInd verb) >> showOptions
-                                   'd' -> (putStrLn def) >> showOptions
-                                   'c' -> update' acid (UpdateStats (tense,subj,verb) True)
-					  >> loop newSeed verbs (hiTen,len) acid
-                                   'w' -> update' acid (UpdateStats (tense,subj,verb) False)
-					  >> loop newSeed verbs (hiTen,len) acid
-                                   'g' -> query' acid TenseStats >>= putStrLn . show
+                                   's' -> (dispLine $ show $ conjs PresentInd verb) >> showOptions tense subj verb def seed
+                                   'd' -> dispLine def >> showOptions tense subj verb def seed
+                                   'c' -> ask >>= (\p -> update' (pAcid p) $ UpdateStats (tense,subj,verb) True)  >> loop seed
+                                   'w' -> ask >>= (\p -> update' (pAcid p) $ UpdateStats (tense,subj,verb) False)  >> loop seed
+                                   'g' -> ask >>= (\p -> query' (pAcid p) TenseStats) >>= dispLine . show >> return ()
                                    'q' -> return ()
+                  where dispLine = liftIO . putStrLn
 
 
 tab2spaces n = intercalate (replicate n ' ') . splitOn "\t"
-displayProblem :: (Tense,Subject,String) -> IO ()
+
+displayProblem :: (Tense,Subject,Verb) -> IO ()
 displayProblem (tense,subj,verb) = do
                     putStrLn $ show tense ++ "\t\t" ++ verb
                     putStrLn $ (show subj)
-		    --putStrLn $ verb
 
-loadIrregulars :: FilePath -> IO [(String, [[String]])]
-loadIrregulars dir = do
-                       allFiles <- filter (not . flip elem [".",".."]) <$> getDirectoryContents dir
-                       let list = map (\f -> do  conjs <- map (splitOn "\t") . lines <$> readFile (dir </> f)
-                                                 return (dropExtension f,conjs)
-                                      ) allFiles
-                       sequence list
-                       
+getProblem seed = 
+             do p <- ask
+                let hiTen = pHiTen p
+                let num = pNumVerbs p
+                let ((t,s,idx),newSeed) = getRands seed hiTen num
+                let (v,d) = (pVerbs p) !! idx
+                return $ ((t,s,(v,d)),newSeed)
                                    
 delay :: Int -> IO ()
 delay n = sequence_ $ map (\x->putStr (show x) >> hFlush stdout >> dots ) [1..n]
         where putDot = sleep 333 >> putStr "." >> hFlush stdout 
               dots = sequence_ [putDot,putDot,putDot]
-              sleep i = usleep (i*1000)
-getRands :: StdGen -> (Tense,Int) -> ((Tense,Subject,Int),StdGen)
-getRands seed (hiTen,hi) = flip runState seed $ (,,) <$> getRandomR (minBound,hiTen) <*> getRandom <*> getRandomR (0,hi)
+              sleep i = usleep (i*1000) --for Windows comment this out
+
+getRands :: StdGen -> Tense -> Int -> ((Tense,Subject,Int),StdGen)
+getRands seed hiTen hi = flip runState seed $ (,,) <$> getRandomR (minBound,hiTen) <*> getRandom <*> getRandomR (0,hi)
         
 getRandomR :: (Random a) => (a,a) -> State StdGen a
 getRandomR (lo,hi) = do seed <- get
