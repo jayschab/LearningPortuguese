@@ -1,0 +1,497 @@
+abaixar	go down, bend over, lower	
+abandonar	leave, abandon, desert	
+aborrecer	to upset, annoy, bother	
+abotoar	to fasten, button	
+abraçar	to hug, embrace	
+abrir	to open	
+absorver	to absorb	
+acabar	to finish, complete, end	
+acalmar	to calm down, become calm	
+acariciar	to caress, pet, stroke	
+aceitar	to accept	
+acender	to light, turn on	
+achar	to believe, think, find	
+acomodar	to accommodate, comfort, put up, house	
+acompanhar	to accompany, to follow	
+aconselhar	to advise	
+acontecer	to happen, take place, occur	
+acordar	to wake up	
+acostumar	to get used to	
+acreditar	to believe	
+acrescentar	to add to, increase	
+acudir	to go to the aid of	
+acumular	to accumulate, amass	
+adiar	to postpone, defer, put off	
+adivinhar	to guess, predict	
+adoecer	to become sick	
+adorar	to adore, love, worship	
+adormecer	to fall asleep	
+adquirir	to acquire, obtain	
+advertir	to warn, caution	
+afastar	to move away, depart	
+afligir	to worry, distress	
+agarrar	to grab, seize, grasp	
+agir	to act, behave, perform	
+agradecer	to thank	
+ajoelhar	to kneel	
+ajudar	to help, aid, assist	
+alegrar	to make happy, become happy	
+alimentar	to feed, nourish	
+almoçar	to have lunch	
+alterar	to alter, modify, to falsify	
+alugar	to rent	
+amar	to love	
+ameaçar	to threaten	
+amolecer	to soften, relent	
+ampliar	to enlarge, expand	
+analisar	to analyze	
+andar	to walk	
+animar	to cheer up, to encourage	
+aniquilar	annihilate, exterminate	
+anoitecer	to get dark	
+anunciar	to announce	
+apagar	to turn off, put out	
+apaixonar	to fall in love with, to turn on	
+apanhar	to catch, take	
+apertar	to squeeze, pinch, push a button	
+apetecer	to appeal to, to crave, to feel like doing something	
+apodrecer	to rot, decay, decompose	
+apoiar	to support, rest	
+apontar	indicate, point out, to point out	
+apostar	to bet, wager	
+apreciar	to admire, value, appreciate	
+aprender	to learn	
+apresentar	to introduce, presentar	
+apressar	to hurry, rush	
+aproveitar	to take advantage of	
+aproximar	to approach, get close to	
+aquecer	to heat, warm up	
+arrancar	to pull, tear out, start	
+arranjar	to fix, to arrange	
+arrebentar	to burst, explode, pop	
+arrefecer	to cool down	
+arrepender	to regret, be sorry, to change one's mind	
+arriscar	to risk, venture	
+arrotar	to burp	
+arruinar	to ruin, to go broke	
+arrumar	to arrange, clean up	
+assassinar	to murder, assassinate	
+assinar	to sign, to describe	
+assistir	to attend, to watch tv	
+assobiar	to whistle	
+associar	to associate	
+assombrar	to astonish, amaze, to shock, surprise	
+assustar	to frighten, scare	
+atacar	to attack	
+atar	to tie, bind	
+atender	to answer, to assist, to wait on	
+aterrorizar	to terrify, frighten, terrorize	
+atingir	to hit, reach, arrive at, to attain, achieve	
+atirar	to throw, hurl	
+atrair	to attract	
+atravessar	to cross, pass through	
+atropelar	to run over, trample	
+balançar	to sway, wave, balance	
+banhar	to bathe	
+barbear	to shave	
+bastar	to be enough, sufficient	
+bater	to knock, hit beat	
+beijar	to kiss	
+beliscar	to pinch	
+bocejar	to yawn	
+botar	to put to place, throw out	
+brigar	to fight, argue	
+brincar	to joke, play	
+buscar	to look for	
+caber	to fit in	
+cair	to fall, drop	
+caminhar	to walk	
+cancelar	to cancel, cross out	
+cansar	to tire	
+cantar	to sing	
+capturar	to capture, catch	
+carregar	to carry, load, charge	
+casar	to marry	
+castigar	to punish	
+caçar	to hunt	
+cego	to bling	
+celebrar	to celebrate	
+censurar	to censor, reprimand	
+chamar	to call	
+chatear	to bother, annoy	
+chegar	to arrive, to come near	
+cheirar	to smell	
+chocar	to shock, crash, collide	
+chorar	to cry	
+chover	to rain	
+chupar	to suck, drain	
+chuviscar	to drizzlee, sprinkle	
+clean	to clean	
+cobrar	to charge, collect	
+cobrir	to cover	
+colaborar	to colaborarate, work with, to cooperate	
+combinar	to combine, arrange	
+comer	to eat	
+começar	to begin	
+compartilhar	to share, take part in	
+completar	to complete, finish	
+complicar	to complicate	
+comprar	to buy	
+compreender	to understand	
+concentrar	to concentrate	
+condenar	to condemn, convict, to reject	
+confessar	to confess	
+confiar	to trust, confide	
+confortar	to comfort, console	
+confundir	to confuse, mix up	
+congelar	to freeze	
+conhecer	to know, meet, get to know	
+conjugar	to conjugate, combine	
+conquistar	to conquer	
+conservar	to conservar, preserve	
+considerar	to consider	
+consultar	to consult	
+contar	to tell, count	
+continuar	to continue	
+contribuir	to contribute	
+controlar	to control	
+conversar	to talk, speak	
+converter	to convert	
+convidar	to invite	
+copiar	to copy	
+correr	to run	
+corrigir	to correct	
+cortar	to cut	
+cozinhar	to cook	
+coçar	to scratch	
+crer	to believe	
+crescer	to grow	
+criar	to create, rais, bring up	
+criticar	to criticize	
+cuidar	to take care of	
+culpar	to blame	
+cultivar	to cultivate, grow, raise plants	
+cumprimentar	to greet	
+cumprir	to fulfil, keep a promise	
+cunstruir	to build, construct	
+curar	to cure, heal	
+cuspir	to spit	
+custar	to cost, to be difficult	
+dançar	to dance	
+dar	to give	
+decidir	to decide	
+declarar	to declare, state	
+defender	to defend	
+definir	to define	
+deitar	to lay, to put to bed, lie down	
+deixar	to let, allow	
+depender	to depend on	
+depositar	to deposit, put, place	
+descer	to go down, descend	
+desejar	to wish, want, desire	
+desenhar	to design, to draw	
+desenvolver	to develope, grow into	
+desmaiar	to faint, pass out	
+despachar	to send off, fire, get rid off, get going	
+despedir	to fire, dismiss	
+despir	to undress	
+destruir	to destroy	
+dever	to owe, should, must	
+dirigir	to direct, drive	
+discernir	to distinguish, discern	
+discriminar	to discriminate	
+discutir	to argue, to discuss, debate	
+disfarçar	to disguise, conceal	
+distinguir	distinguish, differentiate	
+divertir	to entertain, amuse	
+dividir	to divide, distribute	
+divorciar	to divorce	
+dizer	to say, tell	
+dobrar	to fold, bend, to double	
+doer	to hurt, ache	
+dominar	to dominate, rule, command	
+dorimir	to sleep	
+durar	to last, endure	
+duvidar	to doubt	
+educar	to educate, bring up	
+eliminar	to eliminate	
+emagrecer	to get, become, lose weight	
+embrulhar	to wrap, get involved	
+empregar	to employ, hire, make use of	
+emprestar	to lend	
+empurrar	to push	
+encher	to fill	
+encontrar	to meet, find	
+enfeitar	to dress up, decorate	
+enfraquecer	to weaken, to become weak	
+enfrentar	to face, confront, to stand up	
+enganar	to decieve, dool, mislead	
+engolir	to swallow	
+engomar	to starch/ iron clothes,	
+engordar	to fatten, put on weight	
+enjoar	to make sick to ones stomach	
+enriquecer	to enrich, become rich	
+ensaiar	to rehearse, practice, try out	
+ensinar	to teach	
+entrar	to enter, come into	
+entregar	to deliver, to turnin	
+entristecer	to sadden	
+envelhecer	to make old	
+envergonhar	to embarras, shame	
+enviar	to send	
+errar	to be wrong, mistaken	
+escolher	to choose, select, pick	
+esconder	to hide, conceal	
+escorregar	to slip, slide	
+escrever	to write	
+escutar	to listen	
+esfriar	to cool down	
+esgotar	to exhaust, wear out	
+espantar	to frighten, scare	
+esperar	to expect, wait for, hope	
+espirrar	to sneeze	
+esquecer	to forget	
+estabelecer	to establish, set up	
+estacionar	to park	
+estar	to be	
+estimar	to estimate, appraise, esteem	
+estirar	to stretch, extend	
+estragar	to spoil, ruin	
+estudar	to study	
+evitar	to avoid, to evade	
+exagerar	to exaggerate, overstate	
+examinar	to examine	
+excitar	to excite, arouse	
+excitar	to excite, to arouse, to get	
+exclamar	to exclaim, to shout	
+existir	to exist	
+experimentar	to experiment, try out, experience	
+explicar	to explain	
+explodir	to explode, blow up, burst	
+fabricar	to produce, make, build	
+faltar	to lack, be missing	
+fazer	to do, to make	
+fechar	to close	
+ferir	to wound	
+ferver	to boil	
+festejar	to celebrate	
+ficar	to remain, become, stay	
+fingir	to pretend, make believe	
+formar	to form, shape	
+fornecer	to furnish, provide, supply	
+forçar	to force, compel	
+fritar	to fry	
+frustrar	to frustrate	
+fugir	to run away, escape	
+fumar	to smoke	
+ganhar	to earn, win	
+garantir	to garantee	
+gastar	to spend, wear out	
+gerar	to generate	
+gostar	to like	
+governar	to govern	
+gozar	to enjoy, make fun of	
+gritar	to shout	
+guardar	to keep, put away, conceal	
+habituar	to accustom, to get used to	
+haver	to be, to haver	
+imaginar	to imagine	
+imitar	to imitate, copy	
+implicar	to imply, tease	
+importar	to matter, to care about	
+inchar	to swell	
+incluir	to include	
+indicar	to indicate, point out	
+insistir	to insist	
+interessar	to interest, concern	
+invejar	to envy	
+inventar	to invent, devise	
+ir	to go	
+irritar	to irritate, bother, annoy	
+jantar	eat dinner	
+jogar	to play, throw	
+julgar	to judge	
+juntar	to join, put together, gather	
+jurar	to swear, vow	
+ladrar	to bark	
+lamber	to lick	
+lançar	to throw, hurl	
+lavar	to wash	
+lembrar	to remind, remember	
+ler	to read	
+levantar	to lift up, get up	
+levar	to take, carry	
+ligar	to join, tie, call by phone	
+limitar	to limit, restrict	
+lutar	to fight	
+machucar	to bruise, crush, smash, get hurt	
+magoar	to upset, distress, hurt emocionally	
+manchar	to stain	
+mandar	to order, give orders	
+mastigar	to chew	
+matar	kill	
+medir	to measure	
+melhorar	to improve	
+mencionar	to mention	
+mentir	to lie	
+merecer	to deserve	
+meter	to put in, get oneself into	
+mexer	to mix, to mess with	
+misturar	to mix, to blend,mingle	
+molhar	to wet	
+morar	to live	
+morder	to bite	
+morrer	to die	
+mostrar	to show	
+mover	to move	
+mudar	to move, change, alter	
+multar	to fine, give ticket	
+murchar	to wilt	
+nadar	to swim	
+nascer	to be born	
+negar	to deny, refuse	
+nevar	to snow	
+nomear	nominate, appoint	
+notar	to note, to notice, take note of	
+obedecer	to obey	
+obrigar	to force, make	
+observar	to observe	
+ocupar	occupy, handle	
+odiar	to hate, detest, despise	
+ofender	to offend, insult	
+oferecer	to offer	
+olhar	to look at	
+ousar	to dare	
+ouvir	to hear, listen	
+pagar	to pay	
+parar	to stop	
+parecer	to seem, look like	
+passar	to pass, spend, to happen	
+pausar	to pause, to break	
+pecar	to sin	
+pedir	to ask for, beg	
+pegar	to catch, grab, pick up	
+pendurar	to suspend	
+pensar	think, consider	
+pentear	to comb	
+perceber	to notice, perceive	
+perdoar	to forgive, pardon	
+perguntar	to ask about	
+permitir	to permit, allow	
+persuadir	to persuade	
+pertencer	to belong to	
+pesar	to weigh	
+pescar	to fish, catch	
+pingar	to drip	
+pintar	to paint	
+piorar	to worsen	
+plantar	to plant	
+poder	to be able to, can	
+polir	to polish, shine	
+possuir	to own, possess	
+poupar	to spare oneself	
+practicar	to practice	
+precisar	to need	
+preferir	to prefer	
+preparar	to prepare, make ready	
+preservar	to preserve, conserve, save	
+procurar	to look for, try to	
+produzir	to produce, manufacture	
+programar	to program, schedule	
+progredir	to progress,proceed, advance	
+proibir	to prohibit, ban	
+proteger	to protect	
+provar	to prove, test, try	
+pular	to jump	
+puxar	to pull	
+pôr	to put, place	
+quebrar	to brake, bust, shatter	
+queimar	to burn	
+queixar	to complain	
+querer	to want, wish	
+recear	to fear	
+receber	to recieve	
+recuperar	to recuperate, recover	
+recusar	to refuse	
+refrescar	to refresh, freshen	
+registrar	register	
+rejeitar	to reject	
+relacionar	to relate, associate	
+renovar	to renew, renovate	
+repetir	to repeat	
+respeitar	to respect, value	
+respirar	to breath	
+responder	to answer, respond	
+rezar	to pray	
+rir	to laugh	
+roer	to gnaw, nibble, eat away	
+rogar	to beg, plead	
+romper	to rip, tear, break off	
+roncar	to snore	
+roubar	to steal, rob	
+saber	to know	
+sacudir	to shake, wave	
+sair	to leave, get out	
+salvar	to save, rescue	
+secar	to dry	
+seguir	to follow, to continue	
+sentar	to seat, to sit down	
+sentir	to feel, to be sorry	
+ser	to be	
+servir	to serve, to be of use	
+soar	to sound, ring	
+sobrar	to be left over, be in excess	
+sofrer	to suffer	
+soltar	to let go, release	
+somar	to add	
+sonhar	to dream	
+soprar	to blow out	
+suar	to sweat	
+suavizar	to soften, soothe	
+subir	to go up, climb	
+substituir	to substitute, exchange, replace	
+sufocar	to suffocate, to smother, choke	
+sugerir	to suggest	
+sujar	to dirty, soil	
+surpreender	to surprise	
+tecer	to weave	
+telefonar	to call	
+tentar	to attempt, to try to	
+ter	to have	
+tirar	to take	
+to congratulate	felicitar	
+to guide, lead	guiar	
+to pronuciar	to pronounce	
+tocar	to touch, to play	
+tolerar	to tolerate, stand for	
+tomar	to take, to drink	
+torcer	to twist, wring	
+torrar	to toast, burn	
+torturar	to torture	
+tossir	to cough	
+trabalhar	to work	
+tragar	to swallow, devour	
+trancar	to lock, bolt, bar	
+tratar	to deal with, treat	
+trazer	to bring	
+treinar	to train, practice	
+tremer	to shake, tremble, shiver	
+trocar	to change, exchange, trade	
+unir	to unite, connect	
+usar	to use	
+valer	to be worth	
+varrer	to sweep	
+vencer	to defeat, to overcome, to win	
+vender	to sell	
+ver	to see	
+vestir	to dress, wear	
+viajar	to travel	
+vingar	to avenge, revenge	
+vir	to come	
+virar	to turn, become	
+visitar	to visit	
+viver	to live	
+voar	to fly	
+voltar	to return, come back	
+votar	to vote	
+zangar	to anger
